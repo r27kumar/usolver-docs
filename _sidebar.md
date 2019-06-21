@@ -1,10 +1,10 @@
 - Getting started
 
-  - [Quick start](start/quickstart.md "Title Of page")
-  - [Writing more pages](start/more.md)
+  - [Quick start](/start/quickstart.md "Title Of page")
+  - [Writing more pages](/start/more.md)
 
 - Other
 
-  - [Help](other/help.md)
+  - [Help](/other/help.md)
 
-    - [Test](other/help/test.md)
+    - [Test](/other/help/test.md)
