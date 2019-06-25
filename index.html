@@ -7,6 +7,7 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css">
+  <link rel="stylesheet" href="theme.css">
 </head>
 <body>
   <div id="app"></div>
@@ -16,16 +17,34 @@
       repo: '',
       loadSidebar: true,
       loadNavbar: true,
-      subMaxLevel: 2,
+      subMaxLevel: 3,
       alias: {
-        '/.*/_sidebar.md': '/_sidebar.md'
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/.*/_navbar.md': '/_navbar.md'
       },
       themeable: {
           readyTransition : true, // default
           responsiveTables: true  // default
       }
-    }
+    };
+
+    window.$docsify.plugins= [
+        function(hook, vm) {
+          hook.beforeEach(function(html) {
+            var url =
+              'https://github.com/vitmalina/usolver-docs/' +
+              vm.route.file;
+            var editHtml = '[📝 EDIT DOCUMENT](' + url + ') Last modified 05/05 19:50 \n';
+
+            return (
+              editHtml +
+              html
+            );
+          });
+        }
+    ];
   </script>
+  <!-- <script src="plugins.js"></script>-->
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>

@@ -1,0 +1,8 @@
+:root {
+    --sidebar-background: #e8e8e8;
+
+    --navbar-menu-link-background: ;
+    --navbar-menu-link-background--active: rgba(255, 215, 0, 0.4);
+    --navbar-menu-link-background--hover: ;
+    --navbar-menu-link-padding: 0.5em 1em;
+}
