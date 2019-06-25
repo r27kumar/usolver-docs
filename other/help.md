@@ -25,4 +25,24 @@ example:
 
 <kbd>&uarr;</kbd> + <kbd>w</kbd>
 
+## Tabs
+
+[Link](https://jhildenbiddle.github.io/docsify-tabs/#/?id=usage)
+
+<!-- tabs:start -->
+
+#### ** English **
+
+Hello!
+
+#### ** French **
+
+Bonjour!
+
+#### ** Italian **
+
+Ciao!
+
+<!-- tabs:end -->
+
 *test*
